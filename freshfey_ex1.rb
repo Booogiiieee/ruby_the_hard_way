@@ -1,0 +1,1 @@
+(4...64).to_a.each { |x| puts "=Data_visits!Z$#{x}" }
