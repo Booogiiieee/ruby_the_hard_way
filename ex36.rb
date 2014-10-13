@@ -128,8 +128,10 @@ def lamp_lighter_way_wrong_decision
   choice = $stdin.gets.chomp
   
   if choice == "lamp"
+    @itembag.push('lamp')
     money_way_wrong
   elsif choice == "lighter"
+    @itembag.push('lighter')
     money_way_wrong
   else
     "I can't do that."
@@ -231,7 +233,7 @@ def snake_room_wrong
   puts "You slowly open the door. Oh my god there's a snake. She's lying on a stick... and in front of a door to the right."
   puts "I think you have to either go to the door on the \"left\" or \"fight\" and die."
   
-  snake_room_wrong_decision
+  snake_room_wrong_decision #hmm false
 end
 
 def from_lighter_or_fire_or_snackestick_way_decision
